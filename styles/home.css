@@ -1,0 +1,217 @@
+/* Home */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: rgb(31, 31, 50);
+  color: #fff;
+}
+.body {
+  overflow: hidden; 
+  scrollbar-width: none; 
+}
+.body::-webkit-scrollbar {
+  display: none; 
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: palevioletred;
+  transition: background-color 0.3s ease;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  margin-left: 35px;
+}
+.toggle {
+  display: none; 
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    background-color: palevioletred;
+    z-index: 99;
+  }
+  .navbar a {
+    margin: 15px 0; 
+    text-align: center;
+  }
+ .toggle {
+    display: block; 
+  }
+.navbar.active {
+    display: flex; 
+  }
+}
+.header:hover {
+  background-color: #d85c7b; 
+}
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  transition: color 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+.logo:hover {
+  color: aqua;
+}
+.navbar a {
+  font-family: 'Times New Roman', Times, serif;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+.navbar a:hover,
+.navbar a.active {
+  color: aqua;
+  transform: scale(1.1); 
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10% 0;
+  min-height: 100vh;
+}
+#home-content {
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeIn 1s forwards; 
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+#hello {
+  font-size: 32px;
+  font-weight: 550;
+  font-family: 'Times New Roman', Times, serif;
+}
+#hello span {
+  color: aqua;
+}
+#name {
+  font-family: 'Aclonica';
+  color: palevioletred;
+  font-weight: bold;
+}
+#home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+#home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+  animation: slideIn 1s forwards; 
+}
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+#para {
+  font-size: 18px;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+}
+.home-img img {
+  margin-right: -20px;
+  border-radius: 50%;
+  border: 5px solid palevioletred;
+  box-shadow: 0 0 10px palevioletred;
+  animation: bounce 2s infinite; 
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid palevioletred;
+  border-radius: 50%;
+  font-size: 20px;
+  color: palevioletred;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  transition: 0.5s ease, transform 0.3s ease; 
+}
+.social-media a:hover {
+  background: palevioletred;
+  color: #1f242d;
+  transform: scale(1.1); 
+  box-shadow: 0 0 20px palevioletred;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: palevioletred;
+  border-radius: 40px;
+  box-shadow: 0 0 10px palevioletred;
+  font-size: 16px;
+  color: #1f242d;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease, transform 0.3s ease; 
+}
+.btn:hover {
+  background: #1f242d; 
+  transform: translateY(-3px); 
+}

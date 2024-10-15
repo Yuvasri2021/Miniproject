@@ -1,0 +1,49 @@
+
+/* about */
+
+#about {
+   background: rgb(31, 31, 50);
+    padding: 100px 0 20px 0;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  #about h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  #about p {
+    font-size: 1rem;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  #about-info {
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  #about h6{
+    color:aqua;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #about h5{
+    color:palevioletred;
+    font-weight: bold;
+  }
+  
+  #about #xy{
+    color: palevioletred;
+  }
+  
+  

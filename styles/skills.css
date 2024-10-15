@@ -1,0 +1,198 @@
+/* Skills */
+
+.skills_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgb(31, 31, 50);
+}
+.container {
+    width: 1000px;
+    height: auto;
+    padding: 60px;
+    border-radius: 14px;
+    box-shadow: 2px 14px 45px rgba(0, 0, 0, 0.082);
+    backdrop-filter: blur(60px);
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(5px);
+}
+.circle_1 {
+    top: 8%;
+    right: 13%;
+    background: linear-gradient(to right, #ffff00 0%, #ff6600 100%);
+}
+.circle_2 {
+    bottom: 9%;
+    left: 14%;
+    background: linear-gradient(to right, #090979 0%, #00d4ff 100%);
+}
+.container .skills_head {
+    width: 100%;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.skills_head h2 {
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.skills_head h2 span {
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+}
+.skills_head p {
+    font-size: 17px;
+    opacity: .8;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.skills_main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 38px;
+    grid-column-gap: 60px;
+}
+.skill_bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.skill_bar .info p {
+    font-size: 19px;
+    font-weight: 500;
+    opacity: .8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.skill_bar .bar {
+    width: 100%;
+    height: 14px;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 25px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.11);
+    position: relative;
+}
+.skill_bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #a24a99 0%, #ed83c1 100%);
+}
+.skill_bar .bar .html {
+    width: 90%;
+    animation: html 3s;
+}
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.skill_bar .bar .html {
+    width: 90%;
+    animation: html 3s;
+}
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.skill_bar .bar .css {
+    width: 85%;
+    animation: css 3s;
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+.skill_bar .bar .c {
+    width: 75%;
+    animation: c 3s;
+}
+@keyframes c {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+.skill_bar .bar .js {
+    width: 40%;
+    animation: js 3s;
+}
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+.skill_bar .bar .cplus {
+    width: 60%;
+    animation: cplus 3s;
+}
+@keyframes cplus {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skill_bar .bar .python {
+    width: 70%;
+    animation: python 3s;
+}
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+    100% {  width: 70%;  }
+}
+.skill_bar .bar .sql {
+    width: 65%;
+    animation: sql 3s;
+}
+@keyframes sql {
+    0% {
+        width: 0%;
+    }
+    100% {  width: 65%;  }
+}
+.skill_bar .bar .oracle {
+    width: 50%;
+    animation: oracle 3s;
+}
+@keyframes oracle {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
